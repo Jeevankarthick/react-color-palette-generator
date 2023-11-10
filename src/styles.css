@@ -1,0 +1,89 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 1.2rem;
+  font-family: "Courier New", Courier, monospace;
+  color: #0a0a0a;
+  line-height: 1.5;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.heading {
+  margin: 0;
+  padding: 1em 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.palette-box {
+  display: flex;
+  flex-direction: column;
+  height: 14rem;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.color-box {
+  flex: 1;
+  transition: flex 0.3s;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+}
+
+.color-box:hover {
+  flex: 1.5;
+}
+
+.color-code-btn {
+  background: none;
+  color: #fff;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  letter-spacing: 1px;
+}
+
+.color-code-btn:hover {
+  color: #0a0a23;
+  transition: 0.5s;
+}
+
+.generate-btn {
+  margin: 3em 0;
+  padding: 0.8em 1em;
+  cursor: pointer;
+  background: none;
+  color: #0a0a23;
+  border: solid #0a0a23 1.5px;
+  border-radius: 10px;
+  font-size: 1rem;
+}
+
+.generate-btn:hover {
+  background-color: #0a0a23;
+  color: #fff;
+  transition: 0.5s;
+}
+
+@media (min-width: 800px) {
+  .palette-box {
+    flex-direction: row;
+    height: 20rem;
+  }
+
+  .color-code-btn {
+    margin-top: 8rem;
+    font-size: 1.3rem;
+  }
+}
